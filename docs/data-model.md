@@ -142,4 +142,4 @@ These choices are central to the project’s methodological contribution.
 ## Author
 
 **Antonio Pistilli**  
-Master’s Thesis — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Artificial Intelligence & Sustainability Analytics
