@@ -187,4 +187,4 @@ All data is sourced from publicly available sustainability reports and used sole
 ## Author
 
 **Antonio Pistilli**  
-Master’s Thesis — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Artificial Intelligence & Sustainability Analytics
