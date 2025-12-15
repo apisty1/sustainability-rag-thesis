@@ -1,0 +1,28 @@
+.academic-disclaimer {
+  background-color: #f8f9fa; // light neutral
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #555;
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    color: #333;
+  }
+
+  &__note {
+    margin-top: 0.75rem;
+    font-style: italic;
+    color: #666;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+}

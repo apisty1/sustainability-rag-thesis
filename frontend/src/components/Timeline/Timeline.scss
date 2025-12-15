@@ -1,0 +1,24 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/mixins";
+
+.timeline {
+  position: relative;
+  border-left: 3px solid $color-brand-green;
+  padding-left: 20px;
+
+  &__item {
+    margin-bottom: 40px;
+    @include fade-up(40px, .6s);
+  }
+
+  &__date {
+    font-weight: 700;
+    color: $color-brand-green;
+    margin-bottom: 6px;
+  }
+
+  &__content {
+    @include card;
+    padding: 18px 22px;
+  }
+}

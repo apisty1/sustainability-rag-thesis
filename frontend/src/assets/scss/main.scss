@@ -1,0 +1,16 @@
+// =====================================
+// MAIN SCSS FILE (importa tutto)
+// =====================================
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// Base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/layout";

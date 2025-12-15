@@ -1,0 +1,399 @@
+@import "../../assets/scss/utils/variables";
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Pill */
+.chat-widget__pill {
+  background: #db6a09;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-weight: 700;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Window */
+.chat-widget__window {
+  width: 480px;
+  height: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: pop 0.25s ease;
+  &.expanded {
+    width: 95vh !important;
+    height: 95vh !important;
+    right: 0;
+    bottom: 0;
+    max-height: 100vh !important;
+  }
+}
+
+/* -----------------------------
+   MOBILE OVERRIDE
+----------------------------- */
+@media (max-width: 768px) {
+
+  .chat-widget {
+    right: 10px !important;
+  }
+  .chat-widget__window {
+    width: 95vw !important;
+    height: 85vh !important;
+    max-width: none;
+    max-height: none;
+    border-radius: 12px;
+
+    /* expanded NON cambia nulla su mobile */
+    &.expanded {
+      width: 85vw !important;
+      height: 85vh !important;
+      border-radius: 12px;
+    }
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .chat-widget__header {
+    padding: 16px 8px !important;
+  }
+
+  .mode-toggle .mode-label {
+    font-size: 0.85rem !important;
+  }
+
+}
+
+
+/* Header */
+.chat-widget__header {
+  background: #db6a09;
+  color: white;
+  padding: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-widget__header-buttons button {
+  margin-left: 16px;
+  font-size: 22px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Messages */
+.chat-widget__messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-widget__message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chat-widget__message--user {
+  flex-direction: row-reverse;
+}
+
+.chat-widget__avatar {
+  font-size: 22px;
+  margin: 0 6px;
+}
+
+.chat-widget__bubble {
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  p {
+    margin: 0 0 0.3rem 0;
+  }
+  ul {
+    margin: 0 0 0.4rem 1.1rem;
+    padding-left: 0;
+  }
+}
+
+.chat-widget__message--user .chat-widget__bubble {
+  background: #d7ffd7;
+}
+
+/* Copy badge */
+.chat-widget__copy {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #6c757d;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  &:hover {
+    color: #0d6efd;
+  }
+}
+
+.copy-confirm {
+  font-size: 0.8rem;
+  color: #198754;
+}
+
+.chat-widget__section-tag {
+  margin: 12px 0px;
+  font-size: 0.75rem;
+  background: #fff4d9;
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: #a06000;
+}
+
+/* Typing indicator */
+.chat-widget__typing {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.typing-dots {
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+/* Input */
+.chat-widget__input {
+  display: flex;
+  border-top: 1px solid #eee;
+
+  input {
+    flex: 1;
+    border: none;
+    padding: 16px;
+    outline: none;
+  }
+
+  button {
+    width: 60px;
+    border: none;
+    background: #db6a09;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+    &:hover {
+      background: #095c32;
+    }
+  }
+
+  .mode-badge {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    margin-left: 8px;
+    color: white;
+  }
+
+  .mode-badge.fast {
+    background: #f5b100;
+  }
+
+  .mode-badge.accurate {
+    background: #007bff;
+  }
+
+  /* Toggle switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.2s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+
+  .latency-tag {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 4px;
+  }
+}
+
+.chat-widget__window.fullscreen {
+  width: 95vh !important;
+  height: 95vh !important;
+  right: 0;
+  bottom: 0;
+  border-radius: 0;
+  max-height: 100vh !important;
+}
+
+.chat-widget__suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.suggest-chip {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #0d6efd;
+  background: #fff;
+  color: #0d6efd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #0d6efd;
+    color: #fff;
+  }
+}
+
+/* === Mode Toggle Wrapper === */
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+  margin-right: 1rem;
+
+  .mode-label {
+    font-size: 1.125rem;
+    opacity: 0.5;
+    transition: opacity 0.25s ease, font-weight 0.25s;
+
+    &.active {
+      opacity: 1;
+      font-weight: 600;
+    }
+  }
+}
+
+/* === Custom Toggle Switch === */
+.mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.mode-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider background */
+.mode-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #6ca7ff; /* blu tenue per FAST */
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* The circle */
+.mode-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Checked = Accurate Mode */
+.mode-switch input:checked + .slider {
+  background-color: #ff9c49; /* arancione elegante */
+}
+
+.mode-switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+label.switch {
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+}
+
+
+
+  @keyframes pop {
+    from { transform: scale(0.7); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+

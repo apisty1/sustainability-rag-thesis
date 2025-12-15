@@ -1,0 +1,73 @@
+@import "../../assets/scss/utils/variables";
+
+.sdg__card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* --- Horizontal layout --- */
+.sdg__card--horizontal {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* --- Icon --- */
+.sdg__icon-wrap {
+  flex-shrink: 0;
+}
+
+.sdg__icon {
+  width: 96px;          // 🔥 più grande
+  height: auto;
+}
+
+/* --- Content --- */
+.sdg__content {
+  flex: 1;
+}
+
+.sdg__card-title {
+  font-size: 1.25rem;   // 🔥 più leggibile
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.sdg__card-text {
+  font-size: 1rem;      // 🔥 testo più grande
+  line-height: 1.6;
+  color: #444;
+}
+
+/* --- Section header --- */
+.sdg__title {
+  font-size: 2rem;
+}
+
+.sdg__intro {
+  font-size: 1.1rem;
+  max-width: 760px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* --- Mobile tweak --- */
+@media (max-width: 768px) {
+  .sdg__card--horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sdg__icon {
+    width: 80px;
+  }
+}
+

@@ -1,0 +1,17 @@
+@mixin card {
+  background: $color-white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: $shadow-soft;
+}
+
+@mixin fade-up($distance: 40px, $duration: 0.6s) {
+  opacity: 0;
+  transform: translateY($distance);
+  transition: $duration ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

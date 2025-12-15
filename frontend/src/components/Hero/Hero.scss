@@ -1,0 +1,56 @@
+@import "../../assets/scss/utils/variables";
+
+// =============================================
+// HERO SECTION (BEM + SASS)
+// =============================================
+// - Uses background image from TS import
+// - Dark gradient overlay for text readability
+// - Fully responsive design
+// =============================================
+
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 160px 0;
+  color: $color-white;
+  text-align: center;
+  overflow: hidden;
+
+  // ===== Overlay gradient =====
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.55)
+    );
+    z-index: 1;
+  }
+
+  // ===== Content wrapper =====
+  &__content {
+    position: relative;
+    z-index: 2;   // ensures text stays above overlay
+    max-width: 900px;
+  }
+
+  &__title {
+    font-family: $font-secondary;
+  }
+
+  &__subtitle {
+    opacity: 0.9;
+  }
+
+  &__cta {
+    font-weight: 600;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+  }
+}

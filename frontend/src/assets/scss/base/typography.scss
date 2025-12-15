@@ -1,0 +1,14 @@
+@import "../utils/variables";
+
+:root {
+  --bs-body-font-family: #{$font-primary};
+}
+
+body,
+p {
+  font-family: $font-primary !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-secondary;
+}

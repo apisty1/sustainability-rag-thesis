@@ -1,0 +1,11 @@
+@import "../../assets/scss/utils/variables";
+
+.charts {
+  &__title {
+    font-family: $font-secondary;
+  }
+
+  canvas {
+    max-height: 380px;
+  }
+}

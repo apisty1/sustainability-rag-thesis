@@ -1,0 +1,30 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/mixins";
+
+.kpi {
+  &__title {
+    font-family: $font-secondary;
+  }
+
+  &__grid { }
+}
+
+.kpi-card {
+  @include card;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  .kpi-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-brand-green;
+  }
+
+  .kpi-label {
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+}

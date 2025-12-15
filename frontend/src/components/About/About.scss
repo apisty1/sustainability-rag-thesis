@@ -1,0 +1,20 @@
+@import "../../assets/scss/utils/variables";
+
+.about {
+
+  &__title {
+    font-family: $font-secondary;
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    opacity: .85;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  &__stat-value {
+    font-weight: 700;
+  }
+
+}

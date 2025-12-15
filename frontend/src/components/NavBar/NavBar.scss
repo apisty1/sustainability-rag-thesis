@@ -1,0 +1,19 @@
+@import "../../assets/scss/utils/variables";
+
+.nav-site {
+  background: $color-white;
+  box-shadow: $shadow-medium;
+
+  &__brand {
+    font-weight: 700;
+  }
+
+  &__link {
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-brand-green;
+    }
+  }
+}

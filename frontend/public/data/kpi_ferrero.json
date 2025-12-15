@@ -1,0 +1,40 @@
+{
+  "ghg": {
+    "years": ["2021/22", "2022/23", "2023/24"],
+    "scope1": [489787, 500016, 486762],
+    "scope2": [91621, 53878, 51356],
+    "scope3": [7168193, 7321962, 7065602]
+  },
+  "scope3_breakdown_2023_24": {
+    "categories": [
+      "Raw materials",
+      "Packaging",
+      "Surprises",
+      "Other",
+      "Supply chain"
+    ],
+    "values": [64.7, 11.5, 2.3, 7.3, 7.2]
+  },
+  "energy": {
+    "years": ["2021/22", "2022/23", "2023/24"],
+    "energy_intensity_ratio": [7.41, 7.12, 7.07],
+    "renewable_certified": [88.69, 86.57, 90.07]
+  },
+  "water_withdrawal": {
+    "years": ["2017/18", "2020/21", "2021/22", "2022/23"],
+    "from_water_main": [1.45, 1.40, 1.35, 1.30],
+    "from_well": [1.80, 1.70, 1.65, 1.55],
+    "from_river": [0.50, 0.48, 0.47, 0.45],
+    "from_other_sources": [0.12, 0.10, 0.08, 0.07]
+  },
+  "packaging_2023_24": {
+    "labels": [
+      "Recyclable packaging %",
+      "Recyclable/reusable/compostable %",
+      "Recycled plastic content %",
+      "Renewable materials %",
+      "Plastic-to-product ratio reduction %"
+    ],
+    "values": [92.1, 86.1, 5.8, 40.9, -13]
+  }
+}
