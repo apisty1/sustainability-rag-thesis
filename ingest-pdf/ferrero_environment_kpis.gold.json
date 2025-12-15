@@ -1,0 +1,163 @@
+{
+  "source": "Ferrero Group Sustainability Report 2024",
+  "scope": "Environment",
+  "kpis": [
+    {
+      "category": "Energy",
+      "metric": "Renewable energy consumption",
+      "unit": "%",
+      "values": { "2021_22": 23.59, "2022_23": 22.13, "2023_24": 24.64 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Purchased electric energy certified renewable",
+      "unit": "%",
+      "values": { "2021_22": 88.69, "2022_23": 86.57, "2023_24": 90.07 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Energy intensity ratio",
+      "unit": "GJ/t",
+      "values": { "2021_22": 7.41, "2022_23": 7.12, "2023_24": 7.07 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Total energy consumption",
+      "unit": "TJ",
+      "values": { "2021_22": 10795.58, "2022_23": 10835.57, "2023_24": 11249.30 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Total fuel consumption",
+      "unit": "TJ",
+      "values": { "2021_22": 9036.55, "2022_23": 8959.41, "2023_24": 9064.21 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Total fuel consumption from non-renewables",
+      "unit": "TJ",
+      "values": { "2021_22": 8501.26, "2022_23": 8662.67, "2023_24": 8739.97 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Total fuel consumption from renewables",
+      "unit": "TJ",
+      "values": { "2021_22": 535.29, "2022_23": 296.74, "2023_24": 324.25 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Total electricity consumption (electricity sold excluded)",
+      "unit": "TJ",
+      "values": { "2021_22": 1839.05, "2022_23": 1970.93, "2023_24": 2323.66 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Electricity consumption from non-renewables (electricity sold excluded)",
+      "unit": "TJ",
+      "values": { "2021_22": -172.07, "2022_23": -130.28, "2023_24": -123.45 },
+      "notes": "Negative values reflect energy sold externally; 2023/24 assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Electricity consumption from renewables (electricity sold excluded)",
+      "unit": "TJ",
+      "values": { "2021_22": 2011.12, "2022_23": 2101.20, "2023_24": 2447.11 },
+      "notes": "2023/24 value assured (A)"
+    },
+    {
+      "category": "Energy",
+      "metric": "Steam or hot water consumption (sold streams excluded)",
+      "unit": "TJ",
+      "values": { "2021_22": -80.02, "2022_23": -94.76, "2023_24": -138.57 },
+      "notes": "Negative values due to net sold streams; 2023/24 assured (A)"
+    },
+    {
+      "category": "Environmental certifications",
+      "metric": "ISO 14001 certified plants and warehouses",
+      "unit": "n.",
+      "values": { "2021_22": 29, "2022_23": 29, "2023_24": 29 }
+    },
+    {
+      "category": "Environmental certifications",
+      "metric": "ISO 50001 certified plants and warehouses",
+      "unit": "n.",
+      "values": { "2021_22": 22, "2022_23": 23, "2023_24": 23 }
+    },
+    {
+      "category": "GHG Emissions",
+      "metric": "Total GWP emissions",
+      "unit": "tCO2eq",
+      "values": { "2021_22": 7749600, "2022_23": 7875855, "2023_24": 7603720 },
+      "notes": "Total Scope 1 + Scope 2 market-based + Scope 3; 2023/24 assured (A)"
+    },
+    {
+      "category": "GHG Emissions",
+      "metric": "Scope 1 emissions – net total",
+      "unit": "tCO2eq",
+      "values": { "2021_22": 438959, "2022_23": 445792, "2023_24": 434163 },
+      "notes": "2023/24 assured (A)"
+    },
+    {
+      "category": "GHG Emissions",
+      "metric": "Scope 2 emissions – market-based",
+      "unit": "tCO2eq",
+      "values": { "2021_22": 91621, "2022_23": 53878, "2023_24": 51356 },
+      "notes": "2023/24 assured (A)"
+    },
+    {
+      "category": "GHG Emissions",
+      "metric": "Scope 2 emissions – location-based",
+      "unit": "tCO2eq",
+      "values": { "2021_22": 349966, "2022_23": 368536, "2023_24": 378408 },
+      "notes": "2023/24 assured (A)"
+    },
+    {
+      "category": "Water",
+      "metric": "Water withdrawal",
+      "unit": "m3",
+      "values": { "2021_22": 5396499.99, "2022_23": 5093589.24, "2023_24": 5291727.04 },
+      "notes": "2023/24 assured (A)"
+    },
+    {
+      "category": "Water",
+      "metric": "Water withdrawal ratio",
+      "unit": "m3/t",
+      "values": { "2021_22": 3.70, "2022_23": 3.35, "2023_24": 3.32 },
+      "notes": "2023/24 assured (A)"
+    },
+    {
+      "category": "Water",
+      "metric": "Wastewater",
+      "unit": "m3",
+      "values": { "2021_22": 3126139.15, "2022_23": 2992834.14, "2023_24": 2938519.96 },
+      "notes": "2023/24 assured (A)"
+    },
+    {
+      "category": "Waste",
+      "metric": "Waste production ratio",
+      "unit": "kg/t",
+      "values": { "2021_22": 69.58, "2022_23": 64.90, "2023_24": 81.76 }
+    },
+    {
+      "category": "Waste",
+      "metric": "Total waste",
+      "unit": "t",
+      "values": { "2021_22": 101348.29, "2022_23": 98731.38, "2023_24": 130179.21 }
+    },
+    {
+      "category": "Waste",
+      "metric": "Percentage of recovered waste",
+      "unit": "%",
+      "values": { "2021_22": 97.55, "2022_23": 97.92, "2023_24": 89.32 }
+    }
+
+  ]
+}
