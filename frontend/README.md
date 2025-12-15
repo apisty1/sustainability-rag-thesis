@@ -211,4 +211,4 @@ All data is derived from publicly available sustainability reports and processed
 ## Author
 
 **Antonio Pistilli**  
-Master’s Thesis — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Artificial Intelligence & Sustainability Analytics
