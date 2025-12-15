@@ -69,6 +69,32 @@ The project follows a modular architecture composed of three main layers:
 
 ---
 
+## Running the Project (High-Level)
+
+The system is composed of three main components that must be executed
+in the following order:
+
+1. **Data ingestion**
+   - Parse the sustainability report
+   - Generate embeddings
+   - Populate the vector database  
+   (see `ingest-pdf/README.md`)
+
+2. **Backend API**
+   - Start the RAG API (local or serverless)
+   - Expose `/ask-fast` and `/ask-accurate` endpoints  
+   (see `backend/README.md`)
+
+3. **Frontend application**
+   - Start the web interface
+   - Connect to the backend API  
+   (see `frontend/README.md`)
+
+Each component can be run independently, but the ingestion step
+must be completed before querying the system.
+
+---
+
 ## Design Principles
 
 The project is guided by the following principles:
