@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the **architecture of the Sustainability RAG system**, developed as part of a Master’s thesis.  
+This document describes the **architecture of the Sustainability RAG system**, developed as part of a thesis project.  
 The system is designed as an **end-to-end AI pipeline** that transforms corporate sustainability reports into an interactive, explainable, and queryable web application.
 
 The architecture is intentionally modular and reflects both:
@@ -207,4 +207,4 @@ The production deployment serves as a **proof of feasibility**, while the focus 
 ## Author
 
 **Antonio Pistilli**  
-Master’s Thesis — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Artificial Intelligence & Sustainability Analytics
