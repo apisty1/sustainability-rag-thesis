@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the complete implementation of a **Retrieval-Augmented Generation (RAG)** system developed as part of a **Master’s thesis**.  
+This repository contains the complete implementation of a **Retrieval-Augmented Generation (RAG)** system developed as part of a **Thesis Project**.  
 The project explores how Artificial Intelligence can be used to **analyze, structure, and interpret corporate sustainability reports**, with a specific focus on ESG KPIs.
 
 The system enables users to:
@@ -38,7 +38,7 @@ sustainability-rag-thesis/
 │   ├── src/
 │   └── public/
 │
-└── docs/                    # Supporting documentation (optional)
+└── docs/                    # Supporting documentation
     ├── architecture.md
     └── data-model.md
 ```
@@ -99,4 +99,4 @@ All data originates from publicly available sustainability reports and is used s
 ## Author
 
 **Antonio Pistilli**  
-Master’s Thesis — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Artificial Intelligence & Sustainability Analytics
