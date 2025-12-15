@@ -9,7 +9,7 @@ The pipeline focuses on:
 - Extracting narrative text from sustainability reports
 - Cleaning and chunking content for optimal embeddings
 - Creating vector representations using OpenAI embeddings
-- Storing enriched data into a vector database (Weaviate)
+- Preparing structured data to support hybrid retrieval strategies
 - Preserving page-level traceability for academic transparency
 
 The current implementation targets the **Ferrero Group Sustainability Report 2024** as a case study.
@@ -21,10 +21,10 @@ The current implementation targets the **Ferrero Group Sustainability Report 202
 This module represents the **data foundation** of the entire system:
 
 ```
-PDF → Clean text → Token-aware chunks → Embeddings → Vector DB → RAG backend → Frontend
+PDF → Clean text / Structured data → Embeddings → Vector DB → RAG backend → Frontend
 ```
 
-All downstream components rely on the **quality, structure, and consistency** of the data generated here.
+All downstream components rely on the **quality, structure, and modeling choices** made at this stage.
 
 ---
 
@@ -101,24 +101,42 @@ This setup ensures **full control over embeddings** and **predictable retrieval 
 
 ---
 
-## Why a JSON Representation Is Used
+## From Simple RAG to Hybrid RAG: Why JSON Matters
 
-During development and evaluation, KPI data and extracted information are often exported to **intermediate JSON files**.
+During early experimentation, the system relied on a **single retrieval strategy**:
+- splitting the report into narrative chunks
+- extracting tabular content
+- embedding everything uniformly
 
-This design choice is intentional.
+While effective for qualitative questions, this approach revealed clear limitations when handling **numerical KPIs** and **structured sustainability data**.
+
+In particular:
+- KPI tables were poorly represented when flattened into text
+- Numerical values risked being hallucinated or misattributed
+- Semantic similarity alone was insufficient for precise KPI retrieval
+
+These observations led to the adoption of a **Hybrid RAG approach**, combining:
+- semantic retrieval over narrative text
+- structured access to normalized KPI data
+
+### Why JSON as an Intermediate Representation
+
+To support this hybrid strategy, KPI data is extracted and normalized into **explicit JSON structures** before ingestion.
+
+This design choice is intentional and methodologically motivated.
 
 JSON is used because it is:
-- **Human-readable** → easy to inspect and validate manually
-- **Language-agnostic** → reusable across Python, Node.js, and frontend code
-- **Structurally explicit** → preserves hierarchy, years, and values clearly
-- **Didactically effective** → ideal for explaining data transformations in an academic context
+- **Explicit** — numerical values, years, and metrics are clearly separated
+- **Inspectable** — data can be manually reviewed and validated
+- **Flexible** — usable across Python ingestion, Node.js backend, and frontend
+- **Model-friendly** — avoids ambiguity inherent in free-text tables
 
-In particular, JSON allows:
-- Manual verification of extracted KPIs
-- Rapid iteration on normalization logic
-- Clear separation between *extraction* and *consumption*
+By introducing a structured JSON layer, the pipeline:
+- decouples *extraction* from *retrieval*
+- enables precise KPI querying alongside semantic search
+- improves answer accuracy and reduces hallucinations
 
-For a research-oriented project, transparency and inspectability are prioritized over binary or opaque formats.
+This evolution from a simple chunk-based RAG to a **Hybrid RAG architecture** represents a key methodological contribution of the project.
 
 ---
 
@@ -154,12 +172,16 @@ The script will:
 - load and clean the PDF
 - generate token-aware chunks
 - compute embeddings
+- prepare structured data for hybrid retrieval
 - populate the vector database
 - log progress at each stage
 
 ---
 
 ## Design Considerations (Academic Perspective)
+
+- **Methodological evolution**  
+  The pipeline reflects an iterative research process, evolving from simple RAG to Hybrid RAG.
 
 - **Explainability**  
   Page numbers and chunk indices are preserved for traceability.
@@ -169,9 +191,6 @@ The script will:
 
 - **Reproducibility**  
   The pipeline can be re-executed end-to-end from the original PDF.
-
-- **Separation of concerns**  
-  Data preparation is fully decoupled from querying and UI logic.
 
 ---
 
