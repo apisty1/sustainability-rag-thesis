@@ -207,4 +207,4 @@ The production deployment serves as a **proof of feasibility**, while the focus 
 ## Author
 
 **Antonio Pistilli**  
-Thesis Project — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Consultazione strutturata dei report di sostenibilità mediante tecnologie web: il caso Ferrero
