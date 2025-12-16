@@ -125,4 +125,5 @@ All data originates from publicly available sustainability reports and is used s
 ## Author
 
 **Antonio Pistilli**  
-Thesis Project — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Consultazione strutturata dei report di sostenibilità mediante tecnologie web: il caso Ferrero
+
