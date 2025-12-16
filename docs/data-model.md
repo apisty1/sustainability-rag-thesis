@@ -142,4 +142,4 @@ These choices are central to the project’s methodological contribution.
 ## Author
 
 **Antonio Pistilli**  
-Thesis Project — Artificial Intelligence & Sustainability Analytics
+Thesis Project — Consultazione strutturata dei report di sostenibilità mediante tecnologie web: il caso Ferrero
