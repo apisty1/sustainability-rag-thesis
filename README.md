@@ -1,4 +1,4 @@
-# 🌱 Sustainability RAG Thesis Project
+# 🌱 Consultazione strutturata dei report di sostenibilità mediante tecnologie web: il caso Ferrero
 
 ## Overview
 
