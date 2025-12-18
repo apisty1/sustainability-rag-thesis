@@ -17,7 +17,7 @@ import { startTimer, endTimer } from "../utils/timing.js";
 
 
 /* ============================================================
-   1️⃣ INTENT DETECTION
+   INTENT DETECTION
    ------------------------------------------------------------
    Lightweight heuristic to detect whether the user is likely
    asking for numerical KPI values.
@@ -74,7 +74,7 @@ function buildKpiTables(kpis) {
 
 
 /* ============================================================
-   2️⃣ KPI RETRIEVAL (FerreroKPI)
+   KPI RETRIEVAL (FerreroKPI)
    ------------------------------------------------------------
    Semantic search over structured KPI objects.
    Each object represents:
@@ -105,7 +105,7 @@ async function retrieveKpis(question, limit = 15) {
 }
 
 /* ============================================================
-   3️⃣ NARRATIVE RETRIEVAL (FerreroNarrative)
+   NARRATIVE RETRIEVAL (FerreroNarrative)
    ------------------------------------------------------------
    Used to:
    - explain trends
@@ -131,7 +131,7 @@ async function retrieveNarrative(question, limit = 6) {
 }
 
 /* ============================================================
-   4️⃣ PROMPT BUILDER (CRITICAL COMPONENT)
+   PROMPT BUILDER (CRITICAL COMPONENT)
    ------------------------------------------------------------
    The prompt enforces:
    - strict use of provided data
