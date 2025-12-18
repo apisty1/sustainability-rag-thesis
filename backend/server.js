@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
-    // ✅ Lascia passare il preflight
+    // Lascia passare il preflight
     if (req.method === "OPTIONS") {
         return next();
     }
