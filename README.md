@@ -38,7 +38,7 @@ sustainability-rag-thesis/
 │   ├── src/
 │   └── public/
 │
-└── docs/                    # Supporting documentation
+└── docs/                    # Supporting documentation, Screenshots and screencast
     ├── Screenshots/
     ├── architecture.md
     └── data-model.md
