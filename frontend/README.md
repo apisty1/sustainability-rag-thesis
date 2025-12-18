@@ -1,4 +1,4 @@
-# 🖥️ Frontend — Sustainability Analytics Interface
+# 🖥️ Frontend
 
 ## Overview
 
