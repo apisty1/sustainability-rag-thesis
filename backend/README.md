@@ -113,26 +113,27 @@ Accurate RAG query with re-ranking and KPI enrichment.
 
 ## Data Model (Weaviate)
 
-### FerreroCleanChunk
+### FerreroNarrative
 Narrative text (non-tabular content)
 
 | Field | Type |
 |------|------|
 | page | INT |
+| section | TEXT |
 | text | TEXT |
-| chunk_index | INT |
-| type | TEXT |
 
 ### FerreroKPIChunk
 Structured KPI tables
 
 | Field | Type |
 |------|------|
-| page | INT |
+| year | TEXT |
 | category | TEXT |
 | metric | TEXT |
 | unit | TEXT |
-| values_json | TEXT |
+| values | number |
+| notes | TEXT |
+| source | TEXT |
 
 ---
 
