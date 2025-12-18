@@ -1,4 +1,4 @@
-# 📦 Backend — RAG API for Sustainability Reports
+# 📦 Backend — RAG API
 
 ## Overview
 
