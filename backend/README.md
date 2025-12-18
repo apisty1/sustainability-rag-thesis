@@ -122,7 +122,7 @@ Narrative text (non-tabular content)
 | section | TEXT |
 | text | TEXT |
 
-### FerreroKPIChunk
+### FerreroKPI
 Structured KPI tables
 
 | Field | Type |
